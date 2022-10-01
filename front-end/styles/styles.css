@@ -89,6 +89,10 @@ form a:hover{
     height: 10vh;
 }
 
+.feather-user{
+    cursor: pointer;
+}
+
 .main{
     gap: 2rem;
 }
