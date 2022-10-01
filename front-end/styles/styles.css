@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,22 +7,45 @@
 
 html {
     font-size: 100%;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body{
+    background-color: #FFDEB4;
 }
 
 form{
+    color: #fff;
     gap: 1.5rem;
     width: 25rem;
-    height: 75vh;
     display: flex;
     padding: 2rem;
     text-align: start;
     margin: 8rem auto;
     border-radius: 15px;
     flex-direction: column;
-    border: 1px solid red;
+    box-shadow: 5px 5px 4px #B2A4FF;
+    background-color: #999;
+}
+
+form h2{
+    color: #FFB4B4;
+    text-align: center;
 }
 
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+
+.flex-col label {
+    margin-bottom: 0.3rem;
+}
+
+.flex-col input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #fff;
 }
