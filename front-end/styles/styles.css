@@ -93,6 +93,19 @@ form a:hover{
     cursor: pointer;
 }
 
+.edit-profile{
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+    top: 10rem;
+    background-color: #999;
+    align-items: center;
+}
+
+.img-input{
+    display: none;
+}
+
 .main{
     gap: 2rem;
 }
