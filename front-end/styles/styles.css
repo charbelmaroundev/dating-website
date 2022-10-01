@@ -99,14 +99,17 @@ form a:hover{
     width: 50%;
     padding: 2rem;
     border: 1px solid #999;
+    overflow-y: scroll;
 }
 
 .user-feed{
     justify-content: space-between;
     align-items: center;
     border: 1px solid #999;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0;
 }
 
 .user-feed img{
