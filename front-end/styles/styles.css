@@ -28,6 +28,10 @@ form{
     background-color: #999;
 }
 
+.signin-form{
+    margin: 18rem auto;
+}
+
 form h2{
     color: #FFB4B4;
     text-align: center;
