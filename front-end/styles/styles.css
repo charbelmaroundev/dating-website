@@ -10,6 +10,10 @@ html {
     font-family: 'Noto Sans Mono', monospace;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #FFDEB4;
 }
@@ -59,12 +63,11 @@ form p{
     text-align: center;
 }
 
-form span{
+form a{
     color: #B2A4FF;
-    cursor: pointer;
 }
 
-form span:hover{
+form a:hover{
     color: #FFB4B4;
     text-shadow: 4px 4px 3px #FFB4B4;
 }
