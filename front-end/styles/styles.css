@@ -42,7 +42,8 @@ form h2{
     margin-bottom: 0.3rem;
 }
 
-.flex-col input {
+.flex-col input,
+.flex-col select {
     padding: 0.5rem;
     border-radius: 5px;
     outline: none;
