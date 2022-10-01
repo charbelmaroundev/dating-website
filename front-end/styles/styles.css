@@ -24,7 +24,7 @@ form{
     margin: 8rem auto;
     border-radius: 15px;
     flex-direction: column;
-    box-shadow: 5px 5px 4px #B2A4FF;
+    box-shadow: 7px 7px 4px #B2A4FF;
     background-color: #999;
 }
 
@@ -49,4 +49,18 @@ form h2{
     outline: none;
     border: none;
     background-color: #fff;
+}
+
+form p{
+    text-align: center;
+}
+
+form span{
+    color: #B2A4FF;
+    cursor: pointer;
+}
+
+form span:hover{
+    color: #FFB4B4;
+    text-shadow: 4px 4px 3px #FFB4B4;
 }
