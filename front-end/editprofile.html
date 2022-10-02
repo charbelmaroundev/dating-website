@@ -12,14 +12,7 @@
 <body>
     <div class="edit-profile-bg">
         <div class="edit-profile">
-            <div class="flex-row edit-profile-header">
-                <h2>Edit Profile</h2>
-                <div>
-                    <label for="">Visible</label>
-                    <input type="checkbox" hidden="hidden" id="username">
-                    <label class="switch" for="username"></label>
-                </div>
-            </div>
+            <h2>Edit Profile</h2>
             <label for="file-input">
                 <img src="assets/picture.jpg" alt="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -31,16 +24,24 @@
                 </svg>
             </label>
             <input id="file-input" type="file" />
-            <textarea placeholder="Bio..." name="" id="" cols="30" rows="10"></textarea>
-            <div class="age-name-intersted flex-row">
-                <input min="0" placeholder="Age" type="number">
-                <input placeholder="Name" type="text">
+            <div class="interested-visible flex-row">
                 <select name="" id="">
                     <option value="male">Interested</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
+                <div>
+                    <label for="">Visible</label>
+                    <input type="checkbox" hidden="hidden" id="username">
+                    <label class="switch" for="username"></label>
+                </div>
             </div>
+            <div class="age-name flex-row">
+                <input min="0" placeholder="Age" type="number">
+                <input placeholder="First name" type="text">
+                <input placeholder="Last name" type="text">
+            </div>
+            <textarea placeholder="Bio..." name="" id="" cols="30" rows="10"></textarea>
         </div>
     </div>
 </body>

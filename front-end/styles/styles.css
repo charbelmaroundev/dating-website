@@ -54,8 +54,27 @@ form h2{
     flex-direction: row;
 }
 
+.none {
+    display: none;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #999;
+    opacity: 0.5;
+}
+
 .flex-col label {
     margin-bottom: 0.3rem;
+}
+
+option,
+select {
+    color: #999;
 }
 
 .flex-col input,
@@ -131,16 +150,18 @@ form a:hover{
 
 .edit-profile-header{
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .edit-profile{
     color: white;
     position: absolute;
-    padding: 1rem;
+    padding: 2rem 0;
     width: 40%;
-    top: 10rem;
+    left: 28%;
+    justify-self: center;
+    top: 15rem;
     background-color: #999;
     text-align: center;
     border-radius: 10px;
@@ -169,8 +190,7 @@ form a:hover{
 .edit-profile textarea{
     border-radius: 5px;
     border: none;
-    width: 80%;
-    margin: 2rem;
+    width: 90%;
     padding: 1rem;
     outline: none;
 }
@@ -193,7 +213,7 @@ form a:hover{
     left: 2px;
     width: 22px;
     height: 22px;
-    background: #fafafa;
+    background: #999;
     border-radius: 50%;
     transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -211,9 +231,11 @@ input:checked + .switch:active::before {
     box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
 }
 
-.age-name-intersted{
+.age-name,
+.interested-visible{
     width: 100%;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 1rem auto;
 }
+
