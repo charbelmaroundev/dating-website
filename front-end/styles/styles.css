@@ -11,7 +11,8 @@ html {
     font-family: 'Noto Sans Mono', monospace;
 }
 
-a{
+a,
+input{
     text-decoration: none;
 }
 
@@ -59,7 +60,8 @@ form h2{
 }
 
 .flex-col input,
-.flex-col select {
+.flex-col select,
+.edit-profile input {
     padding: 0.5rem;
     border-radius: 5px;
     outline: none;
@@ -102,19 +104,20 @@ form a:hover{
     top: 10rem;
     background-color: #999;
     text-align: center;
+    border-radius: 10px;
 }
 
 .edit-profile  img{
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
-    /* position: relative; */
+    margin-top: 1.5rem;
 }
 
 .feather-image{
     position: absolute;
     left: 48.5%;
-    top: 55px;
+    top: 110px;
     cursor: pointer;
     opacity: 0.5;
     background-color: #999;
@@ -125,6 +128,7 @@ form a:hover{
 }
 
 .edit-profile textarea{
+    border-radius: 5px;
     width: 80%;
     margin: 2rem;
     padding: 1rem;
