@@ -294,3 +294,12 @@ input:checked + .switch:active::before {
 .favorite h1{
     margin: 2rem 0;
 }
+
+.nav a{
+    color: #fff;
+}
+
+.back{
+    align-items: center;
+    gap: 0.5rem;
+}
