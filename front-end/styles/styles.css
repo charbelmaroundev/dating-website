@@ -63,6 +63,7 @@ form h2{
 }
 
 .backdrop{
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -172,6 +173,7 @@ form a:hover{
 }
 
 .edit-profile{
+    z-index: 2;
     color: white;
     position: absolute;
     padding: 2rem 0;
