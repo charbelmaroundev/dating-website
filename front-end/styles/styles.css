@@ -96,6 +96,7 @@ form a:hover{
 
 .edit-profile{
     position: absolute;
+    padding: 1rem;
     width: 40%;
     height: 50vh;
     top: 10rem;
@@ -113,7 +114,7 @@ form a:hover{
 .feather-image{
     position: absolute;
     left: 48.5%;
-    top: 40px;
+    top: 55px;
     cursor: pointer;
     opacity: 0.5;
     background-color: #999;
@@ -121,6 +122,13 @@ form a:hover{
 
 #file-input{
     display: none;
+}
+
+.edit-profile textarea{
+    width: 80%;
+    margin: 2rem;
+    padding: 1rem;
+    outline: none;
 }
 
 .main{
