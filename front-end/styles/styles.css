@@ -19,6 +19,11 @@ p{
     padding: 0;
 }
 
+svg {
+    width: 32px;
+    height: 32px;
+}
+
 .form-bg{
     background-color: #FFDEB4;
     padding-top: 8rem;
@@ -60,6 +65,10 @@ form h2{
 
 .none {
     display: none;
+}
+
+.block{
+    display: block !important;
 }
 
 .backdrop{
@@ -113,15 +122,23 @@ form a:hover{
     background-color: #999;
     color: #fff;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 .feather-user{
     cursor: pointer;
-    margin-right: 2rem;
+    margin: 0 2rem;
+}
+
+.feather-message-circle{
+    display: none;
 }
 
 .main{
     gap: 2rem;
+    margin-top: 6rem;
 }
 
 .left-section,
@@ -129,7 +146,6 @@ form a:hover{
     height: 90vh;
     width: 50%;
     padding: 2rem;
-    /* border: 0.1px solid #999; */
     overflow-y: scroll;
 }
 
@@ -310,4 +326,47 @@ input:checked + .switch:active::before {
 .back{
     align-items: center;
     gap: 0.5rem;
+}
+
+@media (max-width: 1600px) {
+    html{
+        font-size: 75%;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 1400px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .right-section{
+        display: none;
+    }
+
+    .feather-message-circle{
+        display:inline;
+    }
 }
