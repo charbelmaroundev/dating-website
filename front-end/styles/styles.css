@@ -91,6 +91,7 @@ form a:hover{
 
 .feather-user{
     cursor: pointer;
+    margin-right: 2rem;
 }
 
 .edit-profile{
@@ -99,10 +100,26 @@ form a:hover{
     height: 50vh;
     top: 10rem;
     background-color: #999;
-    align-items: center;
+    text-align: center;
 }
 
-.img-input{
+.edit-profile  img{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.feather-image{
+    position: absolute;
+    left: 48.5%;
+    top: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #999;
+}
+
+#file-input{
     display: none;
 }
 
