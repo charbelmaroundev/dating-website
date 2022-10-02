@@ -288,14 +288,22 @@ input:checked + .switch:active::before {
 
 .favorite{
     text-align: center;
-    margin: 2rem 20rem;
+    margin: 8rem 20rem;
+    margin-bottom: 2rem;
 }
 
-.favorite h1{
-    margin: 2rem 0;
+.favorite-nav{
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
-.nav a{
+.favorite-nav h1{
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.favorite-nav a{
     color: #fff;
 }
 
