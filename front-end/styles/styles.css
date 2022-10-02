@@ -129,7 +129,7 @@ form a:hover{
     height: 90vh;
     width: 50%;
     padding: 2rem;
-    border: 1px solid #999;
+    /* border: 0.1px solid #999; */
     overflow-y: scroll;
 }
 
@@ -258,3 +258,18 @@ input:checked + .switch:active::before {
     margin: 1rem auto;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
