@@ -159,17 +159,29 @@ form a:hover{
     margin: 0 auto;
 }
 
-.edit-profile-nav p {
+.edit-profile-nav p,
+.edit-profile-nav svg{
     cursor: pointer;
     padding: 0.2rem 1.2rem;
     border: 1px solid #fff;
     border-radius: 10px;
 }
 
-.edit-profile-nav p:hover {
+.edit-profile-nav svg{
+    padding: 0.2rem;
+}
+
+.edit-profile-nav p:hover,
+.edit-profile-nav svg:hover {
     background-color: #fff;
     color: #999;
     transition: 0.7s;
+}
+
+.save-close-btn{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
 
 .edit-profile{
