@@ -107,8 +107,8 @@ form a:hover{
 }
 
 .nav{
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     align-items: center;
     background-color: #999;
     color: #fff;
@@ -284,4 +284,13 @@ input:checked + .switch:active::before {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+.favorite{
+    text-align: center;
+    margin: 2rem 20rem;
+}
+
+.favorite h1{
+    margin: 2rem 0;
 }
