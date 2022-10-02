@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    padding: 0;
+}
+
 .form-bg{
     background-color: #FFDEB4;
     padding-top: 8rem;
@@ -148,10 +152,23 @@ form a:hover{
     justify-content: center;
 }
 
-.edit-profile-header{
+.edit-profile-nav{
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+}
+
+.edit-profile-nav p {
+    cursor: pointer;
+    padding: 0.2rem 1.2rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.edit-profile-nav p:hover {
+    background-color: #fff;
+    color: #999;
+    transition: 0.7s;
 }
 
 .edit-profile{
@@ -167,7 +184,7 @@ form a:hover{
     border-radius: 10px;
 }
 
-.edit-profile  img{
+.edit-profile img{
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
@@ -177,7 +194,7 @@ form a:hover{
 .feather-image{
     position: absolute;
     left: 48.5%;
-    top: 110px;
+    top: 130px;
     cursor: pointer;
     opacity: 0.5;
     background-color: #999;
