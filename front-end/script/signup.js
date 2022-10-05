@@ -6,3 +6,7 @@ const interstedGenderEl = document.getElementById("intersted-gender");
 const locationEl = document.getElementById("location");
 const passwordEl = document.getElementById("password");
 const submitEl = document.getElementById("submit");
+
+submitEl.addEventListener("click", (e) => {
+  e.preventDefault();
+});
