@@ -7,6 +7,7 @@ use Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -18,13 +19,25 @@ class AuthController extends Controller
         $gender = $request->gender;
         $intersted_gender = $request->intersted_gender;
         $location = $request->location;
-        $password = $request->password;        
+        $password = $request->password;    
+        $user = User::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'username' => $request->username,
+            'gender' => $request->gender,
+            'intersted_gender' => $request->intersted_gender,
+            'location' => $request->location,
+            'password' => Hash::make($request->password),
+        ]);
+        return response()->json([
+            'status' => '200',
+            'message' => 'Account created',
+        ]);
     }
 
-    public function login()
-    {
-        $credentials = request(['email', 'password']);
-
+    public function login(){
+        $credentials = request(['username', 'password']);
+ 
         if (! $token = auth()->attempt($credentials)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
