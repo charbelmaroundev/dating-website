@@ -9,14 +9,5 @@ Route::group(["prefix"=> "v0.1"], function(){
         Route::post("/me", [AuthController::class, "me"])->name("me");
     });
     Route::post("/login", [AuthController::class, "login"])->name("login");
+    Route::post("/register", [AuthController::class, "register"])->name("register");
 });
-
-
-
-
-
-
-
-
-
-// auth:api

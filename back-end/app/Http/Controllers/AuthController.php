@@ -11,8 +11,14 @@ use App\Http\Controllers\Controller;
 class AuthController extends Controller
 {
 
-    public function test() {
-        return("HI");
+    public function register(Request $request) {
+        $first_name = $request->first_name;
+        $last_name = $request->last_name;
+        $username = $request->username;
+        $gender = $request->gender;
+        $intersted_gender = $request->intersted_gender;
+        $location = $request->location;
+        $password = $request->password;        
     }
 
     public function login()
