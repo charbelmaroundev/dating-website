@@ -25,9 +25,23 @@ svg {
     cursor: pointer;
 }
 
+button{
+    color: #999;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #B2A4FF;
+}
+
 .form-bg{
     background-color: #FFDEB4;
-    padding-top: 8rem;
+    padding-top: 5rem;
     height: 100vh;
 }
 
