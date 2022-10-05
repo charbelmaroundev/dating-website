@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+// use Illuminate\Support\Facades\Auth;
+use Auth;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AuthController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:api', ['except' => ['login']]);
+
+    public function test() {
+        return("HI");
     }
 
     public function login()
